@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import HomePage from "./components/HomePage";
-import AboutPage from "./components/AboutPage";
-import PostsPage from "./components/PostsPage";
-import PostDetailPage from "./components/DetailPage";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import PostsPage from "./pages/PostsPage/PostsPage";
+import PostDetailPage from "./pages/PostsPage/DetailPage";
 import Navbar from "./components/Navbar";
-import { PostsProvider } from "./components/PostsContext";
+import { PostsProvider } from "./context/PostsContext";
 
 const App = () => {
   return (

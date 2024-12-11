@@ -43,8 +43,14 @@ const PostDetailPage = () => {
   return (
     <div className="container">
       <h1>{post.title}</h1>
-      <img src={`/${post.image}`} className="card-img-top" alt={post.title} />
-      <p>{post.content}</p>
+      <div className="d-flex m-3 border">
+        <img
+          src={`http://localhost:3000/${post.image}`}
+          className="img-fluid w-50"
+          alt={post.title}
+        />
+        <p className="p-4">{post.content}</p>
+      </div>
       <div className="d-flex justify-content-between">
         {getPreviousPostId() ? (
           <Link to={`/blog/${getPreviousPostId()}`} className="btn btn-primary">
